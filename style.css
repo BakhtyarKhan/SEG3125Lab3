@@ -1,0 +1,69 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.tabnav {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.tabnav button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.tabnav button:hover {
+  background-color: #ddd;
+}
+
+.tabnav button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  position: relative;
+  left: 85px;
+  display: none;
+  padding: 6px 6px;
+  border: 1px solid #ccc;=
+}
+
+html, body, h1, h3, button {
+  font-family: 'Georgia', serif;
+}
+
+footer {
+  left: 85px;
+  color: black;
+  margin-top: 20px;
+  position: relative;
+  bottom: 5px;
+}
+
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
